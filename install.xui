@@ -14,6 +14,9 @@ sudo bash <(curl -sSfL --tlsv1.3 https://github.com/vaxilu/x-ui/raw/master/insta
 sudo apt install --upgrade --reinstall nginx -yfm --auto remove --purge
 # 安装 acme ：
 sudo bash <(curl -sSfL --tlsv1.3 https://get.acme.sh)
+# 清理緩存
+sudo apt clean
+sudo pip cache purge
 # 添加软链接：
 sudo ln -s  /root/.acme.sh/acme.sh /usr/local/bin/acme.sh
 # 切換 CA 机构
