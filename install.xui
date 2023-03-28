@@ -9,10 +9,10 @@ sudo chmod a+rx /etc/sysctl.conf
 sudo sysctl -p
 
 # 安装 x-ui ：
-sudo bash <(curl -sSfL --tlsv1.3 https://github.com/vaxilu/x-ui/raw/main/install.sh)
+sudo bash <(curl -sSfL --tlsv1.3 https://raw.githubusercontent.com/vaxilu/x-ui/main/install.sh)
 
 # 安装 nginx
-sudo apt install --upgrade --reinstall nginx -yfm --auto remove --purge
+sudo apt install --upgrade --reinstall nginx -yfm --autoremove --purge
 # 安装 acme ：
 sudo bash <(curl -sSfL --tlsv1.3 https://get.acme.sh)
 # 清理緩存
