@@ -6,7 +6,7 @@ sudo apt full-upgrade --reinstall -yfm --autoremove --purge
 sudo bash -c 'echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf'
 sudo bash -c 'echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf'
 sudo chmod a+rx /etc/sysctl.conf
-sysctl -p
+sudo sysctl -p
 
 # 安装 x-ui ：
 sudo bash <(curl -sSfL --tlsv1.3 https://github.com/vaxilu/x-ui/raw/master/install.sh)
