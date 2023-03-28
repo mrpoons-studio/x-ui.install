@@ -19,6 +19,6 @@ sudo ln -s  /root/.acme.sh/acme.sh /usr/local/bin/acme.sh
 # 切換 CA 机构
 sudo acme.sh --set-default-ca --server letsencrypt
 # 申请证书： 
-sudo acme.sh  --issue -d xui.alicepoon1993.xyz -k ec-256 --webroot /var/www/html
+sudo acme.sh  --issue -d xui.alicepoon1993.xyz -k ec-384 --webroot /var/www/html
 # 安装证书：
 sudo acme.sh --install-cert -d xui.alicepoon1993.xyz --ecc --key-file /etc/x-ui/server.key --fullchain-file /etc/x-ui/server.crt --reloadcmd "sudo systemctl force-reload nginx"
