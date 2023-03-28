@@ -9,7 +9,7 @@ sudo chmod a+rx /etc/sysctl.conf
 sudo sysctl -p
 
 # 安装 x-ui ：
-sudo bash <(curl -sSfL --tlsv1.3 https://github.com/vaxilu/x-ui/raw/master/install.sh)
+sudo bash <(curl -sSfL --tlsv1.3 https://github.com/vaxilu/x-ui/raw/main/install.sh)
 
 # 安装 nginx
 sudo apt install --upgrade --reinstall nginx -yfm --auto remove --purge
